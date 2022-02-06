@@ -1,3 +1,4 @@
+nomkl
 aiohttp
 aiosignal
 async-timeout
