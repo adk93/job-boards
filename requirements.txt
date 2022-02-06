@@ -1,69 +1,45 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: osx-64
-aiohttp=3.8.1=py39h89e85a6_0
-aiosignal=1.2.0=pyhd8ed1ab_0
-async-timeout=4.0.2=pyhd8ed1ab_0
-attrs=21.4.0=pyhd8ed1ab_0
-blas=1.0=mkl
-blinker=1.4=py_1
-bottleneck=1.3.2=py39he3068b8_1
-brotlipy=0.7.0=py39h9ed2024_1003
-ca-certificates=2021.10.8=h033912b_0
-cachetools=4.2.4=pyhd8ed1ab_0
-certifi=2021.10.8=py39h6e9494a_1
-cffi=1.15.0=py39hc55c11b_1
-charset-normalizer=2.0.4=pyhd3eb1b0_0
-click=8.0.3=py39h6e9494a_1
-cryptography=36.0.0=py39hf6deb26_0
-frozenlist=1.3.0=py39h89e85a6_0
-google-auth=2.6.0=pyh6c4a22f_0
-google-auth-oauthlib=0.4.6=pyhd8ed1ab_0
-gspread=4.0.1=pyh6c4a22f_0
-idna=3.3=pyhd3eb1b0_0
-intel-openmp=2021.4.0=hecd8cb5_3538
-libcxx=12.0.0=h2f01273_0
-libffi=3.3=hb1e8313_2
-mkl=2021.4.0=hecd8cb5_637
-mkl-service=2.4.0=py39h9ed2024_0
-mkl_fft=1.3.1=py39h4ab4a9b_0
-mkl_random=1.2.2=py39hb2f4e1b_0
-multidict=6.0.2=py39h89e85a6_0
-ncurses=6.3=hca72f7f_2
-numexpr=2.8.1=py39h2e5f0a9_0
-numpy=1.21.2=py39h4b4dc7a_0
-numpy-base=1.21.2=py39he0bd621_0
-oauthlib=3.2.0=pyhd8ed1ab_0
-openssl=1.1.1l=h0d85af4_0
-packaging=21.3=pyhd3eb1b0_0
-pandas=1.3.5=py39h743cdd8_0
-pip=21.2.4=py39hecd8cb5_0
-pyasn1=0.4.8=py_0
-pyasn1-modules=0.2.7=py_0
-pycparser=2.21=pyhd3eb1b0_0
-pyjwt=2.3.0=pyhd8ed1ab_1
-pyopenssl=22.0.0=pyhd3eb1b0_0
-pyparsing=3.0.4=pyhd3eb1b0_0
-pysocks=1.7.1=py39hecd8cb5_0
-python=3.9.7=h88f2d9e_1
-python-dateutil=2.8.2=pyhd3eb1b0_0
-python-dotenv=0.19.2=pyhd8ed1ab_0
-python_abi=3.9=2_cp39
-pytz=2021.3=pyhd3eb1b0_0
-pyu2f=0.1.5=pyhd8ed1ab_0
-readline=8.1.2=hca72f7f_1
-requests=2.27.1=pyhd3eb1b0_0
-requests-oauthlib=1.3.1=pyhd8ed1ab_0
-rsa=4.8=pyhd8ed1ab_0
-setuptools=58.0.4=py39hecd8cb5_0
-six=1.16.0=pyhd3eb1b0_0
-sqlite=3.37.0=h707629a_0
-tk=8.6.11=h7bc2e8c_0
-typing-extensions=4.0.1=hd8ed1ab_0
-typing_extensions=4.0.1=pyha770c72_0
-tzdata=2021e=hda174b7_0
-urllib3=1.26.8=pyhd3eb1b0_0
-wheel=0.37.1=pyhd3eb1b0_0
-xz=5.2.5=h1de35cc_0
-yarl=1.7.2=py39h89e85a6_1
-zlib=1.2.11=h4dc903c_4
+aiohttp @ file:///Users/runner/miniforge3/conda-bld/aiohttp_1637087332153/work
+aiosignal @ file:///home/conda/feedstock_root/build_artifacts/aiosignal_1636093929600/work
+async-timeout @ file:///home/conda/feedstock_root/build_artifacts/async-timeout_1640026696943/work
+attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1640799537051/work
+blinker==1.4
+Bottleneck @ file:///opt/concourse/worker/volumes/live/ac8c8ef3-2ed0-42e9-6ec0-5bb05ad938f6/volume/bottleneck_1607575111469/work
+brotlipy==0.7.0
+cachetools @ file:///home/conda/feedstock_root/build_artifacts/cachetools_1633010882559/work
+certifi==2021.10.8
+cffi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/croot-2p6q7e2r/cffi_1642701115063/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click @ file:///Users/runner/miniforge3/conda-bld/click_1635822684275/work
+cryptography @ file:///opt/concourse/worker/volumes/live/a9ca20dd-e1fe-4ed3-754e-0db64082a5d2/volume/cryptography_1639414576087/work
+frozenlist @ file:///Users/runner/miniforge3/conda-bld/frozenlist_1643222887989/work
+google-auth @ file:///home/conda/feedstock_root/build_artifacts/google-auth_1643678936186/work
+google-auth-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/google-auth-oauthlib_1630497468950/work
+gspread @ file:///home/conda/feedstock_root/build_artifacts/gspread_1628513236270/work
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+mkl-fft==1.3.1
+mkl-random @ file:///opt/concourse/worker/volumes/live/0cda23d8-7460-44b2-7e5d-3c76a8a0ca7e/volume/mkl_random_1626186083266/work
+mkl-service==2.4.0
+multidict @ file:///Users/runner/miniforge3/conda-bld/multidict_1643055401135/work
+numexpr @ file:///opt/concourse/worker/volumes/live/87ac54fe-281a-440d-4d94-26ac99bdabdc/volume/numexpr_1640704258458/work
+numpy @ file:///opt/concourse/worker/volumes/live/21fb9bb9-9731-4901-4403-2bc27cc2cc33/volume/numpy_and_numpy_base_1634106739792/work
+oauthlib @ file:///home/conda/feedstock_root/build_artifacts/oauthlib_1643507977997/work
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.3.5
+pyasn1==0.4.8
+pyasn1-modules==0.2.7
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+PyJWT @ file:///home/conda/feedstock_root/build_artifacts/pyjwt_1638819640841/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///tmp/build/80754af9/pyparsing_1635766073266/work
+PySocks @ file:///opt/concourse/worker/volumes/live/112288ac-9cb0-4e73-768b-13baf4ca6419/volume/pysocks_1605305820043/work
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+python-dotenv @ file:///home/conda/feedstock_root/build_artifacts/python-dotenv_1636649191224/work
+pytz==2021.3
+pyu2f @ file:///home/conda/feedstock_root/build_artifacts/pyu2f_1604248910016/work
+requests @ file:///opt/conda/conda-bld/requests_1641824580448/work
+requests-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/requests-oauthlib_1643557462909/work
+rsa @ file:///home/conda/feedstock_root/build_artifacts/rsa_1637781155505/work
+six @ file:///tmp/build/80754af9/six_1623709665295/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1638334978229/work
+urllib3 @ file:///opt/conda/conda-bld/urllib3_1643638302206/work
+yarl @ file:///Users/runner/miniforge3/conda-bld/yarl_1636046920505/work
