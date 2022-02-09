@@ -38,17 +38,14 @@ def get_companies_list(range: str) -> List:
     gsheet = Gsheets(SPREADSHEET_ID)
     data: List[List] = gsheet.get_data_from_sheet(SOURCE_SHEET_NAME, range)
     flat_data: List = list(filter(lambda x: True if x != "" else False, list(itertools.chain(*data))))
-    add_logs("List of companies parsed")
     return flat_data
 
 
 def parse_data_by_company(url: str, company: str, ParserFactory: Callable,
                           DataExtractor: Callable, data_collector: JobOffers) -> None:
-    add_logs(f"Parsing: {company}")
     parser = ParserFactory(url, company)
     parser.parse()
     parse_results = parser.parse_results
-    add_logs(f"{company} parsed! Now extracting...")
     DataExtractor(parse_results, data_collector, company)
     add_logs(f"{company} data extracted")
 
@@ -66,7 +63,6 @@ def parse_companies(companies: List, data_collector: JobOffers) -> None:
 
 
 def get_previous_postings_from_gsheets() -> List[List]:
-    add_logs("Retrieving previous offers data")
     gsheet = Gsheets(SPREADSHEET_ID)
     return gsheet.get_data_from_sheet(DEST_SHEET_NAME)
 
@@ -78,7 +74,6 @@ def prepare_data_for_sending(data_collector: JobOffers) -> List[List]:
     src_data_df = pd.DataFrame(data=src_data, columns=head)
 
     # convert parsed data to a pandas dataframe
-    add_logs("Converting parsed data to a dataframe")
     parsed_data: pd.DataFrame = data_preparators.convert_dataclass_to_dataframe(data_collector)
     add_logs("Data converted into a dataframe")
 
@@ -86,7 +81,6 @@ def prepare_data_for_sending(data_collector: JobOffers) -> List[List]:
     helper_cols_dict = {"employment_types": ["b2b", "UoP"],
                         "extracted_data": ['salary_min', 'salary_max', 'currency']}
 
-    add_logs("Extracting salary data")
     for e_type in helper_cols_dict['employment_types']:
         for data in helper_cols_dict['extracted_data']:
             col_name = f"{e_type}_{data}"

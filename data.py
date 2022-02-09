@@ -28,7 +28,7 @@ class JobOffer:
     job_title: str
     experience_level: str
     workplace_type: str
-    link : str
+    link: str
     skills: List[Skill]
     employment_types: List[EmploymentType]
 
