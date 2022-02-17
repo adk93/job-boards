@@ -21,7 +21,7 @@ def convert_dict_to_str(l: list) -> str:
     try:
         for element in l:
             for k, v in element.items():
-                string += f"{v}"
+                string += f"{v},"
     except TypeError as e:
         print(e)
     except AttributeError as e:

@@ -34,7 +34,6 @@ def add_logs(message: str):
 
 
 def get_companies_list(range: str) -> List:
-    add_logs("Fetching list of companies to parse")
     gsheet = Gsheets(SPREADSHEET_ID)
     data: List[List] = gsheet.get_data_from_sheet(SOURCE_SHEET_NAME, range)
     flat_data: List = list(filter(lambda x: True if x != "" else False, list(itertools.chain(*data))))
@@ -47,7 +46,6 @@ def parse_data_by_company(url: str, company: str, ParserFactory: Callable,
     parser.parse()
     parse_results = parser.parse_results
     DataExtractor(parse_results, data_collector, company)
-    add_logs(f"{company} data extracted")
 
 
 def parse_companies(companies: List, data_collector: JobOffers) -> None:
